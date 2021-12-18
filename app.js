@@ -28,7 +28,7 @@ app.post('/', (req, res)=>{
     // Composing the email to be sent
     let mailOptions = {
         from: data.email,
-        to:  process.env.EMAIL,
+        to:  process.env.RECEIVER_EMAIL,
         subject: data.subject,
         text: `Email from joelfah.github.io
 Name : ${data.name}
